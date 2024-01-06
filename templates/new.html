@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title%}
+    Home Page
+{% endblock %}
+{% block content%}
+<style>
+    body {
+        background-color: lightblue;
+        
+    }
+    </style>
+
+    <div style="text-align:center; background-color:skyblue; font-size: 400%;">
+        <h1><b>在2022年7月，格拉斯哥教會開始集結！</b></h1></div>
+    
+    <div style="text-align: center; font-size: 150%">
+        <h3><b>家庭聚會 ➕ 預工</b></h3>
+        <br>
+        <p>起先，我們是在家庭聚會和預工，尋找學校有半年的時間。</p>    
+    </div>
+
+    <div style="margin-left: 5%">
+    <img src="{{ url_for('static', filename='images/Love-lunch-1.jpg') }}" alt="Your Image" width="800" height="600">
+   
+    <img src="{{ url_for('static', filename='images/BBQ-1.jpg') }}" alt="Your Image" width="800" height="600"></div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 700px;">
+        <img src="{{ url_for('static', filename='images/BBQ-2.jpg') }}" alt="Your Image" width="800" height="600">
+    </div>
+{% endblock %}

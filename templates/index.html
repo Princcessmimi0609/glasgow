@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="text-center" style="background-color: skyblue; font-size: 400%;">
+    <p>Welcome to Glasgow 😊😁🤣😍😊😃😄</p>
+
+    <br>
+
+    <img src="{{ url_for('static', filename='images/the-university-of-glasgow.jpg') }}" alt="University of Glasgow" width="800" height="600">
+</div>
+{% endblock %}

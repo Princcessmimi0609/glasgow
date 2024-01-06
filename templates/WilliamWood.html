@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title%}
+    Home Page
+{% endblock %}
+{% block content%}
+<style>
+    body {
+        background-color: lightblue;
+        
+    }
+    </style>
+    <div style="text-align: center; background-color:skyblue;font-size: 400%;">
+        </h1><b>William Wood High School</b></h1>
+    </div>
+
+    <div style="text-align: center; font-size: 150%;">
+        <p><b>感謝神！ 弟兄姊妹踏上永生路，一同操練甜美日程，同心合意懇切禱告，主將 William Wood High School 賜給我們，<br>
+            使我們能有地方掰餅及接觸人，我們現在穩定來學校活動的有 3 個家庭。</b></p>
+    </div>
+    <br>  
+
+    <div style="margin-left: 20px">
+        <img src="{{ url_for('static', filename='images/Wilwood.jpg') }}" alt="William Wood High School" width="800" height="600">
+        <img src="{{ url_for('static', filename='images/heart.jpg') }}" alt="Your Image" width="800" height="600">
+    </div>  
+    <br>
+    <br>
+
+    <div style="margin-left: 150px">
+        <video width="1200" height="800" controls>
+            <source src="{{ url_for('static', filename='videos/basketball.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    </div>
+{% endblock %}
